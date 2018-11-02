@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SendIT</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+</head>
+
+<body>
+    <div class="navigation">
+        <span class="logo"><a href="#">Send_IT</a></span>
+        <div class="right">
+            <a href="./placeorder.html"><strong>PLace Order</strong></a>
+        </div>
+        <div class="dropdown right">
+            <a href="#">Account</a>
+            <div class="dropdown-content">
+                <a href="./dashboard.html">My orders</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+        <!-- <div class="dropdown right">
+                    <a href="#">Basket 0
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Order 1</a>
+                    </div>
+                </div> -->
+    </div>
+    <div class="main">
+        <div class="inline progress">
+            <div class="inactive">Parcel Information
+                <p>1</p>
+            </div>
+            <div class="active">Address Information
+                <p>2</p>
+            </div>
+            <div class="inactive">Order Summary
+                <p>final</p>
+            </div>
+        </div>
+        <div class="order-container">
+            <form action="./placeorderfinal.html">
+                <div class="inline">
+                    <input type="text" name="origin" id="" class="input" placeholder="Origin:">
+                    <input type="text" name="destination" id="" class="input" placeholder="Destination:">
+                </div>
+                <div class="inline">
+                    <input type="datetime-local" name="" id="" class="input" placeholder="Pick up time">
+                    <input type="text" name="" id="" class="input" placeholder="Beneficiary">
+                </div>
+                <div>
+                    <input type="submit" value="Next" class="button-flex">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
