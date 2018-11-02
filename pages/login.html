@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Send_it</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SendIT</title>
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
-    <script src="../main.js"></script>
 </head>
 
 <body>
@@ -21,16 +20,18 @@
                 <h1>
                     Welcome back
                 </h1>
-                if you don't have an account yet, <a href="./signup.html">Click here.</a>
-                <form action="#" method="get">
-                    <input type="email" name="" id="" placeholder="Email or Username..." class="input">
-                    <input type="password" name="" id="" placeholder="Password..." class="input">
+                <p>if you don't have an account yet,</p> <a href="./signup.html">
+                    <p>Click here.</p>
+                </a>
+                <form action="./dashboard.html" method="post">
+                    <input type="email" name="" id="" placeholder="Email or Username..." class="input" required>
+                    <input type="password" name="" id="" placeholder="Password..." class="input" required>
                     <input type="submit" value="Login" class="button">
                 </form>
             </div>
         </div>
     </div>
-
+    <script src="../main.js"></script>
 </body>
 
 </html>

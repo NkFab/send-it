@@ -5,11 +5,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>SendIT</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
 </head>
 
 <body>
-
+    <div class="navigation">
+        <span class="logo"><a href="#">Send_IT</a></span>
+        <div class="right">
+            <a href="./placeorder.html"><strong>PLace Order</strong></a>
+        </div>
+        <div class="dropdown right">
+            <a href="#">Account</a>
+            <div class="dropdown-content">
+                <a href="./dashboard.html">My orders</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+        <!-- <div class="dropdown right">
+                    <a href="#">Basket 0
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Order 1</a>
+                    </div>
+                </div> -->
+    </div>
+    <div class="main">
+        <div class="inline">
+            <div class="card comp">
+                Compilation
+                <p>16</p>
+            </div>
+            <div class="card del">
+                Delivered
+                <p>12</p>
+            </div>
+            <div class="card on">
+                On the go
+                <p>3</p>
+            </div>
+            <div class="card canc">
+                Canceled
+                <p>1</p>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>SendIT.ref</th>
+                <th>Origin</th>
+                <th>Destination</th>
+                <th>Item</th>
+                <th>Weight</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>sit00001</td>
+                <td>Kimironko</td>
+                <td>
+                    <p>Kicukiro</p>
+                    <form action="#" method="post" class="destination">
+                        <input type="text" name="" id="" class="input-destination">
+                        <input type="submit" value="Change" class="btn-destination">
+                    </form>
+                </td>
+                <td>Kitchenware</td>
+                <td>10kg</td>
+                <td class="status">On the go</td>
+                <td>
+                    <button title="Edit Destination" type="submit" class="edit" onclick="changeDestination(this)">
+                        <img src="../assets/edit-document.svg" width="16" height="16" alt="edit">
+                    </button>
+                    <button title="Cancel Order" type="submit" class="edit">
+                        <img src="../assets/cancel.svg" width="16" height="16" alt="edit">
+                    </button>
+                    <button title="See Details" type="submit" class="edit">
+                        <img src="../assets/eye.svg" width="16" height="16" alt="edit">
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>sit00001</td>
+                <td>Kimironko</td>
+                <td>Kicukiro</td>
+                <td>Kitchenware</td>
+                <td>10kg</td>
+                <td class="status">Canceled</td>
+                <td>
+                    <button title="Edit Destination" type="submit" class="edit">
+                        <img src="../assets/edit-document.svg" width="16" height="16" alt="edit">
+                    </button>
+                    <button title="Cancel Order" type="submit" class="edit">
+                        <img src="../assets/cancel.svg" width="16" height="16" alt="edit">
+                    </button>
+                    <button title="See Details" type="submit" class="edit">
+                        <img src="../assets/eye.svg" width="16" height="16" alt="edit">
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>sit00001</td>
+                <td>Kimironko</td>
+                <td>Kicukiro</td>
+                <td>Kitchenware</td>
+                <td>10kg</td>
+                <td class="status">Delivered</td>
+                <td class="actions">
+                    <button title="Edit Destination" type="submit" class="edit">
+                        <img src="../assets/edit-document.svg" width="16" height="16" alt="edit">
+                    </button>
+                    <button title="Cancel Order" type="submit" class="edit">
+                        <img src="../assets/cancel.svg" width="16" height="16" alt="edit">
+                    </button>
+                    <button title="See Details" type="submit" class="edit">
+                        <img src="../assets/eye.svg" width="16" height="16" alt="edit">
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>sit00001</td>
+                <td>Kimironko</td>
+                <td>
+                    <p>Kicukiro</p>
+                    <form action="./dashboard.html" method="post" class="destination">
+                        <input type="text" name="" id="" class="input-destination">
+                        <input type="submit" value="Change" class="btn-destination">
+                    </form>
+                </td>
+                <td>Kitchenware</td>
+                <td>10kg</td>
+                <td class="status">On the go</td>
+                <td class="actions">
+                    <button title="Edit Destination" type="submit" class="edit" onclick="changeDestination()">
+                        <img src="../assets/edit-document.svg" width="16" height="16" alt="edit">
+                    </button>
+                    <button title="Cancel Order" type="submit" class="edit">
+                        <img src="../assets/cancel.svg" width="16" height="16" alt="edit">
+                    </button>
+                    <button title="See Details" type="submit" class="edit">
+                        <img src="../assets/eye.svg" width="16" height="16" alt="edit">
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="../main.js"></script>
 </body>
 
 </html>
