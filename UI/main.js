@@ -25,6 +25,13 @@ statusColor();
 
 let changeDestination = (destination) => {
     let children = destination.parentElement.parentElement.children[2].children;
-    children[0].style.display = children[0].style.display != 'none' ? 'none' : 'block'
-    children[1].style.display = children[1].style.display == 'none' ? 'block' : 'none'
+    if (children[0].style.display != 'none') {
+        children[0].style.display = 'none';
+        children[1].style.display = 'block';
+    } else {
+        children[0].style.display = 'block';
+        children[1].style.display = 'none';
+    }
+    // children[0].style.display = children[0].style.display != 'none' ? 'none' : 'block'
+    // children[1].style.display = children[1].style.display == 'none' ? 'block' : 'none'
 }
